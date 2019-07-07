@@ -24,7 +24,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '-9t2j7v)=2gk4y03#kyj!4%z&_0net_rd-v#5sq0j#f!b!1b80'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -130,6 +130,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Extra places for collectstatic to find static files.
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, '/static'),
+    'ForecastApp/static'
 )
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
