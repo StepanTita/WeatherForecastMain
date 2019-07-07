@@ -1339,7 +1339,6 @@ form textarea {
     content: " ";
     width: 7px;
     height: 9px;
-    background: url(images/arrow-down.png);
     position: absolute;
     right: 10px;
     top: 0;
@@ -1372,8 +1371,7 @@ form textarea {
       right: 0;
       top: 0;
       bottom: 0;
-      margin: auto;
-      background: url(images/play-button.png); }
+      margin: auto; }
     .live-camera .live-camera-cover img {
       display: block;
       width: 100%;
@@ -1392,7 +1390,6 @@ form textarea {
     content: " ";
     width: 12px;
     height: 7px;
-    background: url(images/arrow.png);
     display: block; }
   .news .date {
     position: absolute;
@@ -1416,7 +1413,6 @@ form textarea {
       content: " ";
       width: 12px;
       height: 7px;
-      background: url(images/arrow.png);
       position: absolute;
       left: 0;
       top: 5px; }
@@ -1426,7 +1422,6 @@ form textarea {
       color: white; }
 
 .arrow-list {
-  list-style-image: url(images/arrow.png);
   list-style-position: inside; }
   .arrow-list li {
     padding: 10px 0;
@@ -1464,7 +1459,6 @@ form textarea {
       vertical-align: middle;
       width: 12px;
       height: 7px;
-      background: url(images/arrow-gray.png) no-repeat;
       margin: 0 10px; }
     .breadcrumb a:hover {
       text-decoration: underline; }
@@ -1502,7 +1496,6 @@ form textarea {
     content: " ";
     width: 30px;
     height: 23px;
-    background: url(images/quote.png);
     position: absolute;
     top: 0;
     left: 0; }
