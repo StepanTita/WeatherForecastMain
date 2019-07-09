@@ -1,0 +1,14 @@
+<select name="city" id="city-select" size="1">
+	{% for city in cities %}
+	<!--<option value="" disabled selected>Choose your city</option>
+  	<option value="London">London</option>
+  	<option value="Kiev">Kiev</option>
+  	<option value="Kharkiv">Kharkiv</option>
+  	<option value="Washington">Washington</option>-->
+  		{% if city.selected %}
+  			<option value="{{ city.city.place }}" selected>{{ city.city.place }}</option>
+  		{% else %}
+  			<option value="{{ city.city.place }}">{{ city.city.place }}</option>
+  		{% endif %}
+  	{% endfor %}
+</select>

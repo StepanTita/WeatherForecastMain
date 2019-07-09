@@ -60,13 +60,7 @@
 					<form action="{% url 'index' %}" class="find-location" method="POST">
 						<!--<input type="text" placeholder="Find your location...">-->
 						{% csrf_token %}
-							<select name="city" id="city-select" size="1">
-								<option value="" disabled selected>Choose your city</option>
-						  		<option value="London">London</option>
-						  		<option value="Kiev">Kiev</option>
-						  		<option value="Kharkiv">Kharkiv</option>
-						  		<option value="Washington">Washington</option>
-							</select>
+						{% include 'partials/cities_list.html' %}
 						<input type="submit" value="Find">
 					</form>
 
@@ -121,42 +115,42 @@
 						<div class="row">
 							<div class="col-md-2 col-sm-6">
 								<div class="live-camera">
-									<figure class="live-camera-cover"><img src="{% static 'images/YandexLogo.png' %}" alt=""></figure>
+									<a href="https://yandex.ua/pogoda/" class="live-camera-cover"><img src="{% static 'images/YandexLogo.png' %}" alt=""></a>
 									<h3 class="location">Yandex</h3>
 									<small class="date percent">30%</small>
 								</div>
 							</div>
 							<div class="col-md-2 col-sm-6">
 								<div class="live-camera">
-									<figure class="live-camera-cover"><img src="{% static 'images/AccuLogo.png' %}" alt=""></figure>
+									<a href="https://www.accuweather.com/en/gb/united-kingdom-weather" class="live-camera-cover"><img src="{% static 'images/AccuLogo.png' %}" alt=""></a>
 									<h3 class="location">AccWeather</h3>
 									<small class="date percent">27%</small>
 								</div>
 							</div>
 							<div class="col-md-2 col-sm-6">
 								<div class="live-camera">
-									<figure class="live-camera-cover"><img src="{% static 'images/BBCLogo2.png' %}" alt=""></figure>
+									<a href="https://www.bbc.com/weather" class="live-camera-cover"><img src="{% static 'images/BBCLogo2.png' %}" alt=""></a>
 									<h3 class="location">BBC Forecast</h3>
 									<small class="date percent">25%</small>
 								</div>
 							</div>
 							<div class="col-md-2 col-sm-6">
 								<div class="live-camera">
-									<figure class="live-camera-cover"><img src="{% static 'images/gismeteLogo.png' %}" alt=""></figure>
+									<a href="https://www.gismeteo.ua/" class="live-camera-cover"><img src="{% static 'images/gismeteLogo.png' %}" alt=""></a>
 									<h3 class="location">Gismeteo</h3>
 									<small class="date percent">9%</small>
 								</div>
 							</div>
 							<div class="col-md-2 col-sm-6">
 								<div class="live-camera">
-									<figure class="live-camera-cover"><img src="{% static 'images/WowLogo.png' %}" alt=""></figure>
+									<a href="https://www.worldweatheronline.com/lang/ru/" class="live-camera-cover"><img src="{% static 'images/WowLogo.png' %}" alt=""></a>
 									<h3 class="location">World Weather</h3>
 									<small class="date percent">6%</small>
 								</div>
 							</div>
 							<div class="col-md-2 col-sm-6">
 								<div class="live-camera">
-									<figure class="live-camera-cover"><img src="{% static 'images/intelliLogo.png' %}" alt=""></figure>
+									<a href="https://www.wunderground.com/intellicast" class="live-camera-cover"><img src="{% static 'images/intelliLogo.png' %}" alt=""></a>
 									<h3 class="location">Intellicast</h3>
 									<small class="date percent">3%</small>
 								</div>
